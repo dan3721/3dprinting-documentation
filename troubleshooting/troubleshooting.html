@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Troubleshooting</title>
+    <style>
+        img.visual {
+            width: 300px;
+        }
+        td.solutions {
+            width: 300px;
+        }
+        td.discussion {
+        }
+    </style>
+</head>
+<body>
+<a name="top"/>
+
+<ol>
+    <li><a href="#1">First Layer not Binding (loose / unconnected filament tracks)</a></li>
+    <li><a href="#2">Elephant's Foot</a></li>
+    <li><a href="#3">Popping Noise from Nozzle</a></li>
+</ol>
+
+<a name="1"/>
+<h2>First Layer not Binding (loose / unconnected filament tracks)</h2>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Sample</th>
+        <th>Corrective Actions</th>
+        <th>Discussion</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td width="200"><img class="visual" src="./img/first-layer-not-binding.jpg"></td>
+        <td class="solutions">
+            <ul>
+                <li>Re-level bed and get the nozzle closer to the bed.</li>
+                <li>Increase the flow rate of the initial layer.</li>
+            </ul>
+        </td>
+        <td class="discussion">If the nozzle is too high above the bed, the filament is not squished out enough. If the
+            nozzle is at the proper height then either the line with or flow rate is too low. Increasing the line width
+            is less ideal because it can effect other parameters such as the number of lines in the brim and position of
+            the lines. A better choice is to increase the flow rate of the initial layer which will simply make the
+            lines fatter.
+        </td>
+    </tr>
+    </tbody>
+</table>
+<p><a href="#top" style="text-align: center;">back to top</a></p>
+
+<a name="2"/>
+<h2>Elephant's Foot</h2>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Visual</th>
+        <th>Corrective Actions</th>
+        <th>Discussion</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td width="200"><img class="visual" src="./img/elephants-foot.jpg"></td>
+        <td class="solutions">Lower the bed temperature.</td>
+        <td class="discussion">The bed temperature is too high and the first layer is not solidifying before the weight
+            of the layers above squish it.
+        </td>
+    </tr>
+    </tbody>
+</table>
+<p><a href="#top" style="text-align: center;">back to top</a></p>
+
+<a name="3"/>
+<h2>Popping Noise from Nozzle</h2>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Visual</th>
+        <th>Corrective Actions</th>
+        <th>Discussion</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td width="200"></td>
+        <td class="solutions">Lower printing temperature.</td>
+        <td class="discussion">Printing temperature is to high and the filament is boiling in the nozzle.</td>
+    </tr>
+    </tbody>
+</table>
+<p><a href="#top" style="text-align: center;">back to top</a></p>
+
+</body>
+</html>
