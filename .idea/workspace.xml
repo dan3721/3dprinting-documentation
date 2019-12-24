@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3f6dc47-dbec-4350-bf34-099af623896f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/img/adhesion-bubbling.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/troubleshooting/adhesion-bubbling.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/elephants-foot.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/troubleshooting/elephants-foot.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/first-layer-not-binding.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/troubleshooting/first-layer-not-binding.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/troubleshooting.html" beforeDir="false" afterPath="$PROJECT_DIR$/troubleshooting/troubleshooting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,19 +33,19 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="2452" />
+          <entry key="html" value="2463" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="2452" />
+          <entry key="HTML" value="2463" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/troubleshooting/troubleshooting.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="134">
@@ -72,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="32" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="32" />
+              <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -99,6 +96,7 @@
     <findStrings>
       <find>a src</find>
       <find>./img/</find>
+      <find>troubleshooting</find>
     </findStrings>
     <replaceStrings>
       <replace>a href</replace>
@@ -112,9 +110,9 @@
       <list>
         <option value="$PROJECT_DIR$/troubleshooting.html" />
         <option value="$PROJECT_DIR$/temprature-tower.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/temprature-tower/temperature-tower.html" />
         <option value="$PROJECT_DIR$/troubleshooting/troubleshooting.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -199,12 +197,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577024714851</updated>
-      <workItem from="1577024716118" duration="13257000" />
+      <workItem from="1577024716118" duration="13670000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13257000" />
+    <option name="totallyTimeSpent" value="13670000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="272" y="42" width="1264" height="836" extended-state="0" />
@@ -259,13 +257,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/troubleshooting/adhesion-bubbling.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -279,6 +270,13 @@
             <element signature="n#style#0;n#a#0;n#p#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#p#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
         </state>
       </provider>
     </entry>
