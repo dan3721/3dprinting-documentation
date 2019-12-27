@@ -164,7 +164,7 @@
     </thead>
     <tbody>
     <tr>
-        <td width="200"><img class="visual" src="usb.jpg"></td>
+        <td width="200"><img class="visual" src="usb-vs-sd-card.png"></td>
         <td class="solutions">
             <ul>
                 <li>Print from SD card.</li>
@@ -172,17 +172,24 @@
         </td>
         <td class="discussion">
             This issue is more pronounced when printing cylindrical models due to the rapid incremental changes
-            associated with round paths. Here is the same print done directly from an SD card.
-            <img class="visual" src="sd-card.jpg"/>
+            associated with round paths.
+            The USB print was frozen/non-functional and shows blobbing/zitting. It also took almost two hours
+            longer than the estimated print time. The second print from the SD Card yielded a noticeably
+            better/functional result which completed at the estimated time. Furthermore the print head movement
+            was much smoother.
+            <ul>
+                <li>Creality3D CR-10 V2</li>
+                <li>OctoPrint 1.3.12</li>
+                <li>Raspberry Pi Model B Rev 2</li>
+                <li>Print: Roller bearing from 100% printable filament spool holder</li>
+                <li>HATCHBOX PLA</li>
+                <li>bed: 50° C</li>
+                <li>end: 200° C</li>
+            </ul>
+            </p>
             <p>
-                I actually encountered this issue when printing to my Creality3D CR-10 V2 from OctoPrint. The first
-                indication that something was the real time print completion time was fluctuating and that the actual
-                print time was over an hour longer than originally estimated. The final print(<a
-                    href="https://www.thingiverse.com/thing:3459522">Roller bearing
-                from 100% printable filament spool holder</a>) was fused and non functional. The surface also showed
-                noticeable blobs/zits. Upon observing the second printing from the SD card, the motion of the print head
-                was noticeably smoother and the outcome speaks for itself. Further more, the print completed in the
-                expected time frame.
+                See <a href="https://community.octoprint.org/t/the-ongoing-usb-conspiracy-theory/6341/80">The ongoing
+                USB Conspiracy Theory? - General - OctoPrint Community Forum</a>
             </p>
         </td>
     </tr>

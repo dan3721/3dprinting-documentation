@@ -3,17 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d3f6dc47-dbec-4350-bf34-099af623896f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temprature-tower/setLayerTemperatur.py" beforeDir="false" afterPath="$PROJECT_DIR$/temprature-towers/setLayerTemperatur.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temprature-tower/tempTower-220-180-raw.gcode" beforeDir="false" afterPath="$PROJECT_DIR$/temprature-towers/tempTower-220-180-raw.gcode" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temprature-tower/tempTower-220-180.gcode" beforeDir="false" afterPath="$PROJECT_DIR$/temprature-towers/tempTower-220-180.gcode" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temprature-tower/tempTower-220-180.scad" beforeDir="false" afterPath="$PROJECT_DIR$/temprature-towers/tempTower-220-180.scad" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temprature-tower/tempTower-220-180.stl" beforeDir="false" afterPath="$PROJECT_DIR$/temprature-towers/tempTower-220-180.stl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temprature-tower/tempTower.scad" beforeDir="false" afterPath="$PROJECT_DIR$/temprature-towers/tempTower.scad" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temprature-tower/tempTower.stl" beforeDir="false" afterPath="$PROJECT_DIR$/temprature-towers/tempTower.stl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temprature-tower/temperature-tower.html" beforeDir="false" afterPath="$PROJECT_DIR$/temprature-towers/temperature-towers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temprature-tower/tower-180-220.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/temprature-towers/HATCHBOX PLA (blue).jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/troubleshooting/sd-card.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/troubleshooting/troubleshooting.html" beforeDir="false" afterPath="$PROJECT_DIR$/troubleshooting/troubleshooting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/troubleshooting/usb.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,23 +25,23 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="7" />
-          <entry key="jpg" value="10" />
+          <entry key="jpg" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="7" />
-          <entry key="Image" value="10" />
+          <entry key="Image" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="7605" />
+          <entry key="html" value="7649" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="7605" />
+          <entry key="HTML" value="7649" />
         </counts>
       </usages-collector>
     </session>
@@ -59,8 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/troubleshooting/troubleshooting.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="181" column="62" lean-forward="true" selection-start-line="179" selection-start-column="95" selection-end-line="181" selection-end-column="62" />
+            <state relative-caret-position="250">
+              <caret line="166" column="67" selection-start-line="166" selection-start-column="67" selection-end-line="166" selection-end-column="67" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -229,12 +221,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577024714851</updated>
-      <workItem from="1577024716118" duration="25363000" />
+      <workItem from="1577024716118" duration="25890000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25363000" />
+    <option name="totallyTimeSpent" value="25890000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="272" y="42" width="1264" height="836" extended-state="0" />
@@ -326,10 +318,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/troubleshooting/sd-card.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/troubleshooting/troubleshooting.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="181" column="62" lean-forward="true" selection-start-line="179" selection-start-column="95" selection-end-line="181" selection-end-column="62" />
+        <state relative-caret-position="250">
+          <caret line="166" column="67" selection-start-line="166" selection-start-column="67" selection-end-line="166" selection-end-column="67" />
           <folding>
             <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#1;n#body#0;n#html#0;n#!!top" expanded="true" />
