@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature Towers</title>
+    <style>
+        pre.code {
+            background-color: #eee;
+            border: 1px solid #999;
+            display: block;
+            padding: 20px;
+        }
+
+        img.visual {
+            width: 300px;
+        }
+
+        .filament-color {
+            width: 100px;
+            height: 100px;
+        }
+
+        .parameter-name {
+            width: 100px;
+            background-color: lightgray;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+<p>
+    First off, all of this work is strongly based on [Customizable Temperature Tower Version
+    2](https://www.thingiverse.com/thing:2615842) by [quirxi](https://www.thingiverse.com/quirxi). All I really
+    did was follow the directions ;)
+
+    I really like the v2 tower design because it covers so many aspects in a single print.
+</p>
+
+
+<h3>Step 1 Adjusted Tower Layers</h3>
+
+Loaded <a href="tempTower-220-180.scad">tempTower-220-180.scad</a> into OpenSCAD and adjusted the temperature block
+configuration for nine
+blocks ranging between 180° to 220° as I find the common print ranges of PLA to be 185° to 210°.
+
+Exported as <a href="tempTower-220-180.stl">tempTower-220-180.stl</a>
+
+<h3>Step 2 Embedded Layer Numbers</h3>
+
+Loaded <a href="tempTower-220-180.stl">tempTower-220-180.stl</a> into Slic3r, set the layer height to 0.2mm and
+set `;LAYER:[layer_num]` under "Printer Settings" -> "Custom G-code" -> "Before layer change G-code":
+
+Saved the gcode as <a href="tempTower-220-180-raw.gcode">tempTower-220-180-raw.gcode</a>.
+
+<h3>Step 3 Set Initial Temps and Added a Brim</h3>
+
+Loaded a href="tempTower-220-180-raw.gcode">tempTower-220-180-raw.gcode</a> into Cura in order to add proper brim
+adhesion and sliced to tempTower-220-180.gcode. I was unable to get Slic3r to play nice with the brim and it was
+always printing disconnected from the model. Found [Brim distance #2230](https://github.com/slic3r/Slic3r/issues/2230)
+but, didn't like the solutions (or the argument for the behavior).
+
+<h3>Step 4 Embedded the Temperature Changes</h3>
+
+<pre class="code">
+files$ ./setLayerTemperatur.py -s 220 -e 180 -t 5 -f tempTower-220-180-raw.gcode
+startTemp: 220
+endTemp: 180
+tempStep: 5
+gcodeFile: "tempTower-220-180-raw.gcode"
+outFile: "OUT_tempTower-220-180-raw.gcode"
+step: -5
+-> M104 S220
+-> M104 S215
+-> M104 S210
+-> M104 S205
+-> M104 S200
+-> M104 S195
+-> M104 S190
+-> M104 S185
+-> M104 S180
+</pre>
+
+Renamed OUT_tempTower-220-180-raw.gcode to <a href="tempTower-220-180.gcode">tempTower-220-180.gcode</a>
+</p>
+
+<table cellpadding="10">
+    <tr>
+        <td><img class="visual" src="HATCHBOX%20PLA%20(blue).jpg"/></td>
+        <td>
+
+            <table class="parameters">
+                <tr>
+                    <td class="parameter-name">Filament</td>
+                    <td>HATCHBOX PLA 1.75mm (blue)</td>
+                </tr>
+                <tr>
+                    <td class="parameter-name">True Color</td>
+                    <td><div class="filament-color" style="background-color: blue"></div></td>
+                </tr>
+                <tr>
+                    <td class="parameter-name">Ambient Temperature</td>
+                    <td>65°</td>
+                </tr>
+                <tr>
+                    <td class="parameter-name">Discussion</td>
+                    <td>Following up from the bottom I can see that there is particular layer that is yucky but, getting
+                        better as the temperature is decreasing. At 185° the issue looks resolved and the cone looks better than
+                        the next/one above. Therefore 185° is the sweet spot!
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td><img class="visual" src="Eryone%20Slik%20Blue%20PLA.jpg"/></td>
+        <td>
+            <table class="parameters">
+                <tr>
+                    <td class="parameter-name">Filament</td>
+                    <td>Eryone Silk Blue PLA 1.75mm</td>
+                </tr>
+                <tr>
+                    <td class="parameter-name">True Color</td>
+                    <td><div class="filament-color" style="background-color: cornflowerblue;"></div></td>
+                </tr>
+                <tr>
+                    <td class="parameter-name">Ambient Temperature</td>
+                    <td>65°</td>
+                </tr>
+                <tr>
+                    <td class="parameter-name">Discussion</td>
+                    <td>
+                        195° looks pretty good. Much the same as the HATCHBOX PLA (which upon re-evaluation is arguably
+                        also better at 195/190°).
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+</div>
+</body>
+</html>

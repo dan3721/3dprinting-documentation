@@ -9,9 +9,13 @@
 
         td.solutions {
             width: 300px;
+            text-align: left;
+            padding: 10px;
         }
 
         td.discussion {
+            text-align: left;
+            padding: 10px;
         }
     </style>
 </head>
@@ -22,7 +26,10 @@
     <li><a href="#1">First Layer not Binding (loose / unconnected filament tracks)</a></li>
     <li><a href="#2">Elephant's Foot</a></li>
     <li><a href="#3">Adhesion Bubbling</a></li>
-    <li><a href="#4">Popping Noise from Nozzle</a></li>
+    <li><a href="#4">Nozzle Crashing and Dragging Resulting in Poor Layering</a></li>
+    <li><a href="#5">Slow Data Transfer (USB)</a></li>
+    <li><a href="#6">Loosing Adhesion Mid/Late Print ("Safety Tape")</a></li>
+    <li><a href="#100">Popping Noise from Nozzle</a></li>
 </ol>
 
 <a name="1"/>
@@ -53,7 +60,7 @@
     </tr>
     </tbody>
 </table>
-<p><a href="#top" style="text-align: center;">back to top</a></p>
+<p style="text-align: center;"><a href="#top">back to top</a></p>
 
 <a name="2"/>
 <h2>Elephant's Foot</h2>
@@ -68,15 +75,20 @@
     <tbody>
     <tr>
         <td width="200"><img class="visual" src="elephants-foot.jpg"></td>
-        <td class="solutions">Lower the bed temperature.</td>
+        <td class="solutions">
+            <ul>
+                <li>Lower the bed temperature.</li>
+            </ul>
+        </td>
         <td class="discussion">The bed temperature is too high and the first layer is not solidifying before the weight
-            of the layers above squish it.
+            of the layers above squish it. Here we can see a minor case. Note this artifact is inherent of printing on
+            a heated bed. It may or may not be an issue depending on the print. For example it may lead to
+            non-functional/frozen bearings.
         </td>
     </tr>
     </tbody>
 </table>
-<p><a href="#top" style="text-align: center;">back to top</a></p>
-
+<p style="text-align: center;"><a href="#top">back to top</a></p>
 
 <a name="3"/>
 <h2>Adhesion Bubbling</h2>
@@ -91,14 +103,123 @@
     <tbody>
     <tr>
         <td width="200"><img class="visual" src="adhesion-bubbling.jpg"></td>
-        <td class="solutions">Increase the bed temprature.</td>
-        <td class="discussion">The bed temperature is too low and the adhesion is failing.</td>
+        <td class="solutions">
+            <ul>
+                <li>Increase the bed temperature.</li>
+                <li>Decrease brim/initial layer speeds.</li>
+            </ul>
+        </td>
+        <td class="discussion">Initially was successful in resolving this issue by increasing the bed temperature.
+            Later tweaked the brim by reducing the line count to 10 and found I also needed to reduce the speed 10mm/s
+            to maintain good adhesion. Furthermore at some point I was tweaking settings to try and eliminate a
+            slight case of <a href="#2">Elephant's Foot</a>. Could the cube have been rocking which compromised
+            the adhesion?
+        </td>
     </tr>
     </tbody>
 </table>
-<p><a href="#top" style="text-align: center;">back to top</a></p>
+<p style="text-align: center;"><a href="#top">back to top</a></p>
 
 <a name="4"/>
+<h2>Nozzle Dragging (Poor Layering)</h2>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Visual</th>
+        <th>Corrective Actions</th>
+        <th>Discussion</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td width="200"><img class="visual" src="nozzel-dragging.jpg"></td>
+        <td class="solutions">
+            <ul>
+                <li>Re-level bed.</li>
+            </ul>
+        </td>
+        <td class="discussion">In this case, the back of the bed was slightly lower than the front. This cased multiple
+            issues including:
+            <ul>
+                <li>Poorly laminated layers; visually not-aligned and the post snapped right off</li>
+                <li>The piece was printed with a brim which was bound to the piece more than normal and did not
+                    remove easily or cleanly.
+                </li>
+            </ul>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<p style="text-align: center;"><a href="#top">back to top</a></p>
+
+<a name="5"/>
+<h2>Slow Data Transfer (USB)</h2>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Visual</th>
+        <th>Corrective Actions</th>
+        <th>Discussion</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td width="200"><img class="visual" src="usb.jpg"></td>
+        <td class="solutions">
+            <ul>
+                <li>Print from SD card.</li>
+            </ul>
+        </td>
+        <td class="discussion">
+            This issue is more pronounced when printing cylindrical models due to the rapid incremental changes
+            associated with round paths. Here is the same print done directly from an SD card.
+            <img class="visual" src="sd-card.jpg"/>
+            <p>
+                I actually encountered this issue when printing to my Creality3D CR-10 V2 from OctoPrint. The first
+                indication that something was the real time print completion time was fluctuating and that the actual
+                print time was over an hour longer than originally estimated. The final print(<a
+                    href="https://www.thingiverse.com/thing:3459522">Roller bearing
+                from 100% printable filament spool holder</a>) was fused and non functional. The surface also showed
+                noticeable blobs/zits. Upon observing the second printing from the SD card, the motion of the print head
+                was noticeably smoother and the outcome speaks for itself. Further more, the print completed in the
+                expected time frame.
+            </p>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<p style="text-align: center;"><a href="#top">back to top</a></p>
+
+<a name="6"/>
+<h2>Loosing Adhesion Mid/Late Print ("Safety Tape")</h2>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Visual</th>
+        <th>Corrective Actions</th>
+        <th>Discussion</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td width="200">
+            <img class="visual" src="safety-tape.jpg">
+            <img class="visual" src="safety-tape2.jpg">
+        </td>
+        <td class="solutions">
+            <ul>
+                <li>Use "Safety Tape".</li>
+            </ul>
+        </td>
+        <td class="discussion">
+            This technique works well when printing with a brim or a raft.
+        </td>
+    </tr>
+    </tbody>
+</table>
+<p style="text-align: center;"><a href="#top">back to top</a></p>
+
+<a name="100"/>
 <h2>Popping Noise from Nozzle</h2>
 <table border="1">
     <thead>
@@ -111,12 +232,16 @@
     <tbody>
     <tr>
         <td width="200"></td>
-        <td class="solutions">Lower printing temperature.</td>
+        <td class="solutions">
+            <ul>
+                <li>Lower printing temperature.</li>
+            </ul>
+        </td>
         <td class="discussion">Printing temperature is to high and the filament is boiling in the nozzle.</td>
     </tr>
     </tbody>
 </table>
-<p><a href="#top" style="text-align: center;">back to top</a></p>
+<p style="text-align: center;"><a href="#top">back to top</a></p>
 
 </body>
 </html>
