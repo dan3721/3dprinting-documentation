@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Troubleshooting</title>
+    <link rel="stylesheet" type="text/css" href="../3d.css"/>
     <style>
         img.visual {
             width: 300px;
@@ -21,6 +23,7 @@
 </head>
 <body>
 <a name="top"/>
+<h4 style="text-align: right"><a href="../index.html">Home</a></h4>
 
 <ol>
     <li><a href="#1">First Layer not Binding (loose / unconnected filament tracks)</a></li>
@@ -29,6 +32,7 @@
     <li><a href="#4">Nozzle Crashing and Dragging Resulting in Poor Layering</a></li>
     <li><a href="#5">Slow Data Transfer (USB)</a></li>
     <li><a href="#6">Loosing Adhesion Mid/Late Print ("Safety Tape")</a></li>
+    <li><a href="#7">Clogged Nozzle</a></li>
     <li><a href="#100">Popping Noise from Nozzle</a></li>
 </ol>
 
@@ -37,7 +41,7 @@
 <table border="1">
     <thead>
     <tr>
-        <th>Sample</th>
+        <th>Visual</th>
         <th>Corrective Actions</th>
         <th>Discussion</th>
     </tr>
@@ -225,6 +229,71 @@
     </tbody>
 </table>
 <p style="text-align: center;"><a href="#top">back to top</a></p>
+
+<a name="7"/>
+<h2>Clogged Nozzle</h2>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Visual</th>
+        <th>Corrective Actions</th>
+        <th>Discussion</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td width="200">
+            <img class="visual" src="filament-dust-protector.jpg">
+        </td>
+        <td class="solutions">
+            <ul>
+                <li>Use a filament dust protector.</li>
+            </ul>
+        </td>
+        <td class="discussion">
+            Here I just cut down a piece of the packing foam that the printer came in. It is a bit coarse and I
+            suspect a more spongy material would be better.
+        </td>
+    </tr>
+    </tbody>
+</table>
+<p style="text-align: center;"><a href="#top">back to top</a></p>
+
+<a name="8"/>
+<h2>Spool Rocking</h2>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Visual</th>
+        <th>Corrective Actions</th>
+        <th>Discussion</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td width="200">
+            <video width="300" controls>
+                <source src="spool-rocking.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </td>
+        <td class="solutions">
+            <ul>
+                <li>Use a filament holder that rolls with less friction.</li>
+                <li>Manually advance the spool every so ofter so that there is some slack and repeat once the filament
+                    gets taught again.
+                </li>
+            </ul>
+        </td>
+        <td class="discussion">
+            If the feed extruder has to fight for filament, it can negatively impact flow, retraction, etc which will
+            then lead to poor print results. The effect here is pronounced as the reel is still pretty full/heavy.
+        </td>
+    </tr>
+    </tbody>
+</table>
+<p style="text-align: center;"><a href="#top">back to top</a></p>
+
 
 <a name="100"/>
 <h2>Popping Noise from Nozzle</h2>

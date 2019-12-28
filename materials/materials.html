@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Materials</title>
+    <link rel="stylesheet" type="text/css" href="../3d.css"/>
+    <style>
+        img.visual {
+            width: 400px;
+        }
+
+        .filament-color {
+            width: 100px;
+            height: 100px;
+        }
+
+        .parameters {
+            vertical-align: top;
+        }
+
+        .parameter-name {
+            width: 100px;
+            background-color: whitesmoke;
+            font-weight: bold;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+    </style>
+    <script>
+
+      function applyFilters () {
+        // let target = event.target
+        document.getElementsByName('sample').forEach(sample => {
+
+          let sampleName = sample.querySelector('td[name=\'name\']').innerHTML
+
+          // type
+          let filteredTypes = []
+          if (document.getElementById('filter-type-pla').checked)
+            filteredTypes.push('PLA')
+          if (document.getElementById('filter-type-abs').checked)
+            filteredTypes.push('ABS')
+          let type = sample.querySelector('td[name=\'type\']').innerHTML
+          let hiddenByType = !filteredTypes.some(t => t == type)
+
+          // brand
+          let hiddenByBrand = false
+          let filterBrandElement = document.getElementById('filter-brand')
+          let filterBrand = filterBrandElement.options[filterBrandElement.selectedIndex].text
+          if (filterBrand != 'All') {
+            let brand = sample.querySelector('td[name=\'brand\']').innerHTML
+            hiddenByBrand = brand !== filterBrand
+          }
+
+          // console.log(
+          //   `sampleName:[${sampleName}] hiddenByType:[${hiddenByType}](${type}) hiddenByBrand:[${hiddenByBrand}](${filterBrand})`)
+          sample.style.display = hiddenByType || hiddenByBrand ? 'none' : 'block'
+
+        })
+      }
+
+      function filterOnType (type) {
+        // filterType = event.target.checked ? type : undefined
+        applyFilters()
+      }
+
+      function filterOnBrand () {
+        // filterBrand = event.target.value
+        applyFilters()
+      }
+
+    </script>
+</head>
+<a name="top"/>
+<h4 style="text-align: right"><a href="../index.html">Home</a></h4>
+
+<h1>Materials</h1>
+
+<label for="filter-brand">Brand</label>
+<select id="filter-brand" onchange="filterOnBrand()">
+    <option>All</option>
+    <option>HATCHBOX</option>
+    <option>Eryone</option>
+    <option>MiKA3D</option>
+</select>
+
+<label for="filter-type-pla">PLA</label>
+<input checked id="filter-type-pla" type="checkbox" onchange="filterOnType()"/>
+
+<label for="filter-type-abs">ABS</label>
+<input checked id="filter-type-abs" type="checkbox" onchange="filterOnType()"/>
+
+<div class="grid">
+    <div name="sample">
+        <table cellpadding="10">
+            <tr>
+                <td><img class="visual" src="hatchbox-blue.jpg"/></td>
+                <td class="parameters">
+                    <table>
+                        <tr>
+                            <td class="parameter-name">Name</td>
+                            <td name="name">Hatch Blue</td>
+                        </tr>
+                        <tr>
+                            <td class="parameter-name">Type</td>
+                            <td name="type">PLA</td>
+                        </tr>
+                        <tr>
+                            <td class="parameter-name">Brand</td>
+                            <td name="brand">HATCHBOX</td>
+                        </tr>
+                        <tr>
+                            <td class="parameter-name">Size</td>
+                            <td>1.75mm</td>
+                        </tr>
+                        <tr>
+                            <td class="parameter-name">Color</td>
+                            <td>
+                                <div class="filament-color" style="background-color: blue"></div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div name="sample">
+        <table cellpadding="10">
+            <tr>
+                <td><img class="visual" src="eryone-silk-blue.jpg"/></td>
+                <td class="parameters">
+                    <table>
+                        <tr>
+                            <td class="parameter-name">Name</td>
+                            <td name="name">Silk Blue</td>
+                        </tr>
+                        <tr>
+                            <td class="parameter-name">Type</td>
+                            <td name="type">PLA</td>
+                        </tr>
+                        <tr>
+                            <td class="parameter-name">Brand</td>
+                            <td name="brand">Eryone</td>
+                        </tr>
+                        <tr>
+                            <td class="parameter-name">Size</td>
+                            <td>1.75mm</td>
+                        </tr>
+                        <tr>
+                            <td class="parameter-name">Color</td>
+                            <td>
+                                <div class="filament-color" style="background-color: cornflowerblue"></div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div name="sample">
+        <table cellpadding="10">
+            <tr>
+                <td><img class="visual" src="mika3d-silk-silver.jpg"/></td>
+                <td class="parameters">
+                    <table>
+                        <tr>
+                            <td class="parameter-name">Name</td>
+                            <td name="name">Silk Silver</td>
+                        </tr>
+                        <tr>
+                            <td class="parameter-name">Type</td>
+                            <td name="type">PLA</td>
+                        </tr>
+                        <tr>
+                            <td class="parameter-name">Brand</td>
+                            <td name="brand">MiKA3D</td>
+                        </tr>
+                        <tr>
+                            <td class="parameter-name">Size</td>
+                            <td>1.75mm</td>
+                        </tr>
+                        <tr>
+                            <td class="parameter-name">Color</td>
+                            <td>
+                                <div class="filament-color" style="background-color: lightgrey"></div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

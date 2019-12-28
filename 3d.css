@@ -1,0 +1,25 @@
+body {
+    font-family: Roboto, Arial;
+}
+
+/* unvisited link */
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: blue;
+}
+
+/* mouse over link */
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+    color: magenta;
+}

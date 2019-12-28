@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Temperature Towers</title>
+    <link rel="stylesheet" type="text/css" href="../3d.css"/>
     <style>
         pre.code {
             background-color: #eee;
@@ -20,6 +21,10 @@
             height: 100px;
         }
 
+        .parameters {
+            vertical-align: top;
+        }
+
         .parameter-name {
             width: 100px;
             background-color: lightgray;
@@ -29,6 +34,9 @@
     </style>
 </head>
 <body>
+<a name="top"/>
+<h4 style="text-align: right"><a href="../index.html">Home</a></h4>
+
 <p>
     First off, all of this work is strongly based on [Customizable Temperature Tower Version
     2](https://www.thingiverse.com/thing:2615842) by [quirxi](https://www.thingiverse.com/quirxi). All I really
@@ -36,7 +44,6 @@
 
     I really like the v2 tower design because it covers so many aspects in a single print.
 </p>
-
 
 <h3>Step 1 Adjusted Tower Layers</h3>
 
@@ -57,7 +64,8 @@ Saved the gcode as <a href="tempTower-220-180-raw.gcode">tempTower-220-180-raw.g
 
 Loaded a href="tempTower-220-180-raw.gcode">tempTower-220-180-raw.gcode</a> into Cura in order to add proper brim
 adhesion and sliced to tempTower-220-180.gcode. I was unable to get Slic3r to play nice with the brim and it was
-always printing disconnected from the model. Found [Brim distance #2230](https://github.com/slic3r/Slic3r/issues/2230)
+always printing disconnected from the model. Found <a href="https://github.com/slic3r/Slic3r/issues/2230">Brim distance
+    #2230</a>
 but, didn't like the solutions (or the argument for the behavior).
 
 <h3>Step 4 Embedded the Temperature Changes</h3>
@@ -87,16 +95,17 @@ Renamed OUT_tempTower-220-180-raw.gcode to <a href="tempTower-220-180.gcode">tem
 <table cellpadding="10">
     <tr>
         <td><img class="visual" src="HATCHBOX%20PLA%20(blue).jpg"/></td>
-        <td>
-
-            <table class="parameters">
+        <td class="parameters">
+            <table>
                 <tr>
                     <td class="parameter-name">Filament</td>
                     <td>HATCHBOX PLA 1.75mm (blue)</td>
                 </tr>
                 <tr>
                     <td class="parameter-name">True Color</td>
-                    <td><div class="filament-color" style="background-color: blue"></div></td>
+                    <td>
+                        <div class="filament-color" style="background-color: blue"></div>
+                    </td>
                 </tr>
                 <tr>
                     <td class="parameter-name">Ambient Temperature</td>
@@ -105,7 +114,8 @@ Renamed OUT_tempTower-220-180-raw.gcode to <a href="tempTower-220-180.gcode">tem
                 <tr>
                     <td class="parameter-name">Discussion</td>
                     <td>Following up from the bottom I can see that there is particular layer that is yucky but, getting
-                        better as the temperature is decreasing. At 185° the issue looks resolved and the cone looks better than
+                        better as the temperature is decreasing. At 185° the issue looks resolved and the cone looks
+                        better than
                         the next/one above. Therefore 185° is the sweet spot!
                     </td>
                 </tr>
@@ -114,15 +124,17 @@ Renamed OUT_tempTower-220-180-raw.gcode to <a href="tempTower-220-180.gcode">tem
     </tr>
     <tr>
         <td><img class="visual" src="Eryone%20Slik%20Blue%20PLA.jpg"/></td>
-        <td>
-            <table class="parameters">
+        <td class="parameters">
+            <table>
                 <tr>
                     <td class="parameter-name">Filament</td>
                     <td>Eryone Silk Blue PLA 1.75mm</td>
                 </tr>
                 <tr>
                     <td class="parameter-name">True Color</td>
-                    <td><div class="filament-color" style="background-color: cornflowerblue;"></div></td>
+                    <td>
+                        <div class="filament-color" style="background-color: cornflowerblue;"></div>
+                    </td>
                 </tr>
                 <tr>
                     <td class="parameter-name">Ambient Temperature</td>
