@@ -12,11 +12,13 @@
         td.solutions {
             width: 300px;
             text-align: left;
+            vertical-align: top;
             padding: 10px;
         }
 
         td.discussion {
             text-align: left;
+            vertical-align: top;
             padding: 10px;
         }
     </style>
@@ -24,6 +26,8 @@
 <body>
 <a name="top"/>
 <h4 style="text-align: right"><a href="../index.html">Home</a></h4>
+
+<h1>Whats the trouble?</h1>
 
 <ol>
     <li><a href="#1">First Layer not Binding (loose / unconnected filament tracks)</a></li>
@@ -33,10 +37,15 @@
     <li><a href="#5">Slow Data Transfer (USB)</a></li>
     <li><a href="#6">Loosing Adhesion Mid/Late Print ("Safety Tape")</a></li>
     <li><a href="#7">Clogged Nozzle</a></li>
+    <li><a href="#8">Spool Rocking</a></li>
+    <li><a href="#9">Wobbling at high Z</a></li>
+    <li><a href="#10">Surface Pocking (Erratic Nozzle Travel)</a></li>
     <li><a href="#100">Popping Noise from Nozzle</a></li>
 </ol>
 
-<a name="1"/>
+<hr/>
+
+<a name="1"></a>
 <h2>First Layer not Binding (loose / unconnected filament tracks)</h2>
 <table border="1">
     <thead>
@@ -48,7 +57,8 @@
     </thead>
     <tbody>
     <tr>
-        <td width="200"><img class="visual" src="first-layer-not-binding.jpg"></td>
+        <td width="200"><a href="first-layer-not-binding.jpg"><img class="visual" src="first-layer-not-binding.jpg"></a>
+        </td>
         <td class="solutions">
             <ul>
                 <li>Re-level bed and get the nozzle closer to the bed.</li>
@@ -66,7 +76,7 @@
 </table>
 <p style="text-align: center;"><a href="#top">back to top</a></p>
 
-<a name="2"/>
+<a name="2"></a>
 <h2>Elephant's Foot</h2>
 <table border="1">
     <thead>
@@ -78,7 +88,7 @@
     </thead>
     <tbody>
     <tr>
-        <td width="200"><img class="visual" src="elephants-foot.jpg"></td>
+        <td width="200"><a href="elephants-foot.jpg"><img class="visual" src="elephants-foot.jpg"></a></td>
         <td class="solutions">
             <ul>
                 <li>Lower the bed temperature.</li>
@@ -94,7 +104,7 @@
 </table>
 <p style="text-align: center;"><a href="#top">back to top</a></p>
 
-<a name="3"/>
+<a name="3"></a>
 <h2>Adhesion Bubbling</h2>
 <table border="1">
     <thead>
@@ -106,7 +116,7 @@
     </thead>
     <tbody>
     <tr>
-        <td width="200"><img class="visual" src="adhesion-bubbling.jpg"></td>
+        <td width="200"><a href="adhesion-bubbling.jpg"><img class="visual" src="adhesion-bubbling.jpg"></a></td>
         <td class="solutions">
             <ul>
                 <li>Increase the bed temperature.</li>
@@ -124,7 +134,7 @@
 </table>
 <p style="text-align: center;"><a href="#top">back to top</a></p>
 
-<a name="4"/>
+<a name="4"></a>
 <h2>Nozzle Dragging (Poor Layering)</h2>
 <table border="1">
     <thead>
@@ -136,7 +146,7 @@
     </thead>
     <tbody>
     <tr>
-        <td width="200"><img class="visual" src="nozzel-dragging.jpg"></td>
+        <td width="200"><a href="nozzel-dragging.jpg"><img class="visual" src="nozzel-dragging.jpg"></a></td>
         <td class="solutions">
             <ul>
                 <li>Re-level bed.</li>
@@ -156,7 +166,7 @@
 </table>
 <p style="text-align: center;"><a href="#top">back to top</a></p>
 
-<a name="5"/>
+<a name="5"></a>
 <h2>Slow Data Transfer (USB)</h2>
 <table border="1">
     <thead>
@@ -168,7 +178,7 @@
     </thead>
     <tbody>
     <tr>
-        <td width="200"><img class="visual" src="usb-vs-sd-card.png"></td>
+        <td width="200"><a href="usb-vs-sd-card.png"><img class="visual" src="usb-vs-sd-card.png"></a></td>
         <td class="solutions">
             <ul>
                 <li>Print from SD card.</li>
@@ -201,7 +211,7 @@
 </table>
 <p style="text-align: center;"><a href="#top">back to top</a></p>
 
-<a name="6"/>
+<a name="6"></a>
 <h2>Loosing Adhesion Mid/Late Print ("Safety Tape")</h2>
 <table border="1">
     <thead>
@@ -214,12 +224,14 @@
     <tbody>
     <tr>
         <td width="200">
-            <img class="visual" src="safety-tape.jpg">
-            <img class="visual" src="safety-tape2.jpg">
+            <a href="safety-tape.jpg"><img class="visual" src="safety-tape.jpg"></a>
+            <a href="safety-tape2.jpg"><img class="visual" src="safety-tape2.jpg"></a>
         </td>
         <td class="solutions">
             <ul>
                 <li>Use "Safety Tape".</li>
+                <li>Increase bed temperature.</li>
+                <li>Ensure the fan is disabled for the first/first few layers.</li>
             </ul>
         </td>
         <td class="discussion">
@@ -230,7 +242,7 @@
 </table>
 <p style="text-align: center;"><a href="#top">back to top</a></p>
 
-<a name="7"/>
+<a name="7"></a>
 <h2>Clogged Nozzle</h2>
 <table border="1">
     <thead>
@@ -243,7 +255,7 @@
     <tbody>
     <tr>
         <td width="200">
-            <img class="visual" src="filament-dust-protector.jpg">
+            <a href="filament-dust-protector.jpg"><img class="visual" src="filament-dust-protector.jpg"></a>
         </td>
         <td class="solutions">
             <ul>
@@ -259,7 +271,7 @@
 </table>
 <p style="text-align: center;"><a href="#top">back to top</a></p>
 
-<a name="8"/>
+<a name="8"></a>
 <h2>Spool Rocking</h2>
 <table border="1">
     <thead>
@@ -294,8 +306,87 @@
 </table>
 <p style="text-align: center;"><a href="#top">back to top</a></p>
 
+<a name="9"></a>
+<h2>Wobbling at high Z</h2>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Visual</th>
+        <th>Corrective Actions</th>
+        <th>Discussion</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td width="200">
+            <a href="wobbling-at-high-z.jpg"><img class="visual" src="wobbling-at-high-z.jpg"></a>
+        </td>
+        <td class="solutions">
+            <ul>
+                <li>Tune the Feed Rate down (FR on printer LCD).</li>
+                <li>Cura - Use Per Model Settings to define a region in which to slow the print speed.</li>
+                <li>If the model is tall and thin, orientate it on the bed so that the longer side is aligned with
+                    the y-axis and the shorter side with the x-axis. The goal is to put the majority of the short
+                    moments on the head as opposed to the bed. Otherwise the moments of the bed being in-line with
+                    the shorter width can induce a the model to wobble especially the thinner and the taller the
+                    print. The primary haul of the <a
+                            href="https://www.myminifactory.com/object/3d-print-star-trek-uss-enterprise-ncc-1701-88991">Star
+                        Trek
+                        USS Enterprise NCC 1701</a> is a good candidate.
+                </li>
+                <li>Print slower.</li>
+            </ul>
+        </td>
+        <td class="discussion">
+            If a tall print lacks stability it may wobble as a result of the build plate moment. This translates to
+            a poor surface finish.
+        </td>
+    </tr>
+    </tbody>
+</table>
+<p style="text-align: center;"><a href="#top">back to top</a></p>
 
-<a name="100"/>
+<a name="10"></a>
+<h2>Surface Pocking (Erratic Nozzle Travel)</h2>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Visual</th>
+        <th>Corrective Actions</th>
+        <th>Discussion</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td width="200">
+            <a href="surface-pocking.jpg"><img class="visual" src="surface-pocking.jpg"></a>
+        </td>
+        <td class="solutions">
+            <ul>
+                <li>Cura - Mesh Fixes > Remove All Holes</li>
+                <li>Manually fix the mesh by other means.</li>
+            </ul>
+        </td>
+        <td class="discussion">
+            <p><a href="https://www.myminifactory.com/object/3d-print-star-trek-uss-enterprise-ncc-1701-88991">Star Trek
+                USS Enterprise NCC 1701</a></p>
+            Here there is significant surface pock marks. Note the surface scaring does not align with a seam, nor is
+            it a result of random z seaming. During printing, the nozzle appeared to be randomly visiting/landing and
+            printing short paths or none at all. Also for some unknown reason there is no infill in the man saucer
+            section although there was in the very bottom levels of it. Upon inspection of the paths in Cura and
+            exploration in the the Mesh Fixes available, I found that enabling "Remove All Holes" resolved both
+            issues!
+            <h3>Before</h3>
+            <a href="before-with-holes.png"><img width="600" src="before-with-holes.png"></a>
+            <h3>After (with infill as expected!)</h3>
+            <a href="after-remove-all-holes.png"><img width="600" src="after-remove-all-holes.png"></a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<p style="text-align: center;"><a href="#top">back to top</a></p>
+
+<a name="100"></a>
 <h2>Popping Noise from Nozzle</h2>
 <table border="1">
     <thead>
