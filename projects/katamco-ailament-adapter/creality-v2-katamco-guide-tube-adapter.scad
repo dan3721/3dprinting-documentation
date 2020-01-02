@@ -20,6 +20,11 @@ v="V2"; // model version
 
 $fn=120;
 
+// animation
+//$vpt= [0, 0, 0];
+//$vpr = [70, -10, 360 * $t];
+//$vpd = 210;
+
 BREAK=5; // use to break stitching
 text_font = "Helvetica:style=Bold";
 
@@ -128,14 +133,11 @@ module adapter() {
 
 }
 
-// animation
-//$vpt= [0, 0, 0];
-//$vpr = [70, -10, 360 * $t];
-//$vpd = 210;
-//translate([-20,-1*sensor_depth/2+1.5,0])  // for animation
     
 // orientate for printing
-translate([sensor_width/2+1.5,-1*sensor_depth/2+1.5,15.5]) rotate([0,180,0])
+ translate([sensor_width/2+1.5,-1*sensor_depth/2+1.5,15.5]) rotate([0,180,0])
+
+// translate([-20,-1*sensor_depth/2+1.5,0])  // for animation
 
 adapter();
 
