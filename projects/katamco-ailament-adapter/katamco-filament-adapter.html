@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KATAMCO Filament Adapter</title>
+    <link rel="stylesheet" type="text/css" href="../../3d.css"/>
+</head>
+<a name="top"/>
+<h4 style="text-align: right"><a href="../../index.html">Home</a></h4>
+
+<h1>KATAMCO Filament Adapter</h1>
+
+<a href="adapter-all.jpg"><img class=screen-capture" src="adapter-all.jpg"/></a>
+
+</p>
+This was my first custom part. KATAMCO makes this really awesome <a
+        href="https://katamco.com/products/3d-printer-filament-box-new-dispenser-and-storage-container?_pos=7&_sid=ee7e381e9&_ss=r">filament
+    box</a>. The only problem I had was that the weight of the filament tube was putting stress on the filament and
+a significant bed at higher z levels. I used <a href="https://www.openscad.org/">OpenSCAD</a> which has an extremely
+low learning curve and is simple fantastic. I started with this <a href="https://youtu.be/ecd_eWPnynk">beginners
+    tutorial</a>. I learned about the really cool minkowski transformation from <a
+        href="https://youtu.be/lPgLZgnbREk">here</a>. I even published this adapter on <a href="https://www.thingiverse.com/thing:4079046">Thingiverse</a>!
+</p>
+
+<a href="adapter-openscad.png"><img class="screen-capture" src="adapter-openscad.png"/></a>
+<a href=adapter-openscad-animation.gif"><img class="screen-capture" src="adapter-openscad-animation.gif"/></a>
+
+<h2>Tolerances</h2>
+
+<p>
+    The tube was 6 mm and using 6.2 mm for the port resulted in a snug/friction fit.
+    The fit to the box was a trial and error game. I'll need to spend some more time in this area understanding
+    how my printers dimensional accuracy in all planes. Calipering the standard 20 mm xyz cube the results are
+    x(+0.8), y(+0.06), and z(-0.25).
+</p>
+
+<h3>Files</h3>
+
+<li><a href="creality-v2-katamcoguide-tube-adapter.scad">creality-v2-katamcoguide-tube-adapter.scad</a></li>
+<li><a href="creality-v2-katamcoguide-tube-adapter.stl">creality-v2-katamcoguide-tube-adapter.stl</a></li>
+
+</body>
+</html>

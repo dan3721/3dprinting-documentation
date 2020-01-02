@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>USS Enterprise NCC-1701</title>
+    <link rel="stylesheet" type="text/css" href="../../3d.css"/>
+</head>
+<a name="top"/>
+<h4 style="text-align: right"><a href="../../index.html">Home</a></h4>
+
+<h1>USS Enterprise NCC-1701</h1>
+
+<!--<img src=""/>-->
+
+</p>
+This was my first big project consisting of multiple parts. The model and related files obtained from
+<a href="https://www.myminifactory.com/object/3d-print-star-trek-uss-enterprise-ncc-1701-88991">MyMiniFactory: Star
+    Trek USS Enterprise NCC 1701</a> which was done by <a href="https://www.myminifactory.com/users/dsk001">Dsk</a>
+who did an amazing job. It was a really fun project and the perfect way to get in deeper with the slicer options.
+</p>
+
+<h2>
+    General Settings
+</h2>
+<ul>
+    <li>Print Speed: 50 mm/s</li>
+    <li>Printing Temperature: 210° C</li>
+    <li>Bed Temperature: 55° C</li>
+    <li>Ambient Temperature: 66° F</li>
+    <li>Filament: MiKA3D PLA Silk Silver 1.75 mm</li>
+</ul>
+
+<hr/>
+
+<h2>"Main Hull"</h2>
+
+<a href="main-hull.jpg"><img height="300" src="main-hull.jpg"/></a>
+
+<p>
+    Hummm what's up here with this zitting? See <a href="../../troubleshooting/troubleshooting.html#10">Surface Pocking
+    (Erratic Nozzle Travel)</a>.
+    Maybe I'll reprint this again later to get a better print but, it's not the Sistine Chapel so let's move on...
+</p>
+
+<a href="main-hull-top-bottom.jpg"><img class="screen-capture" src="main-hull-top-bottom.jpg"/></a>
+
+<hr/>
+
+<h2>"Secondary Hull"</h2>
+
+<p>
+    I made a few attempts here and had significant difficulties with zitt-ing and ringing. <i>Note the glued seam. This
+    was a learning exercise for me and I was testing the strength of layer adhesion and getting an idea of what
+    the breaking point was. Let's just say I found it.</i>
+</p>
+<a href="zitting-and-ringing.jpg"><img height="300" src="zitting-and-ringing.jpg"/></a>
+<p>
+    First I focused on the zits and after trying to tweak a few settings related to retraction, I finally broke away and
+    built a <a href="Test Cylinder.scad" download="book.pdf">Test Cylinder</a> in OpenSCAD as it was clear that I would
+    need to test drive multiple setting combinations
+    and I needed something quick to print and examine. Fooling with the retraction distance and speed, I managed to
+    make the zitting worse but not much better. I also tried adjusting the temperature, combing, wipe distance,
+    etc. Finally, and I don't know why I did't start with this, I re-leveled the bed which had a positive impact but,
+    there were still visible surface anomalies. Upon closer inspection the zits went from protrusions to indentations.
+    Perhaps this is just as good as it gets with a random seam? Ultimately my solution was to change the seam
+    alignment from "Random" to "Back". Here are a few of the test cylinders with the last showing the vertical seam.
+    In actuality for this part, I also selected "Sharpest Conner" for this part which results in hading the seam in the
+    windows and other sharp connors on the way up. There are only a few parts for which the circumference is not broken
+    by an edge in which to align/hide the seam.
+</p>
+<p>The first is the current state. The second is a little better due to bed re-leveling). The third is with the seam
+    in the back (piece rotated so it can be seen).</p>
+<a href="cylinder-tests.jpg"><img width="400" src="cylinder-tests.jpg"/></a>
+
+<p>Here you can see the seam hidden in a window. The head is about to complete the layer...</p>
+<a href="seam-in-window.png"><img class="screen-capture-cura" src="seam-in-window.png"/></a>
+
+<p>The actual print came out like this. Not super and I'm not happy with it but, it will do for now.</p>
+<a href="final-secondary-hull.jpg"><img width="400" src="final-secondary-hull.jpg"/></a>
+
+<h3>Files</h3>
+<ul>
+    <li><a href="secondary-hull.3mf">secondary-hull.3mf</a></li>
+    <li><a href="secondary-hull.gcode">secondary-hull.gcode</a></li>
+</ul>
+
+<hr/>
+
+<h2>"Second Hull Front"</h2>
+
+<p>Rotated by 180° and set the seam alignment to the back as there are large portions of the z profile
+    which unlike the secondary haul are not broken by a conner so might as well align the seam
+    directly centered on the underside for those cases and still hide it in the corers when possible. Also adjusted
+    the infill to 8%.</p>
+<a href="second-haul-front-180-seam-back.png"><img class="screen-capture-cura"
+                                                   src="second-haul-front-180-seam-back.png"/></a>
+<a href="second-hull-front.png"><img class="screen-capture" src="second-hull-front.png"></a>
+
+<h3>Files</h3>
+<ul>
+    <li><a href="second-hull-front.3mf">second-hull-front.3mf</a></li>
+    <li><a href="second-hull-front.gcode">second-hull-front.gcode</a></li>
+</ul>
+
+<hr/>
+
+<h2>"Second Hull Satellite"</h2>
+
+<p>All I did here was configure the seam to be on the backside/underside.</p>
+<a href="hide-seam-back.png"><img class="screen-capture-cura" src="hide-seam-back.png"/></a>
+
+<a href="satellite.png"><img class="screen-capture" src="satellite.png"/></a>
+
+<h3>Files</h3>
+
+<li><a href="second-hull-satellite.3mf">second-hull-satellite.3mf</a></li>
+<li><a href="second-hull-satellite.gcode">second-hull-satellite.gcode</a></li>
+
+<hr/>
+
+<h2>"Hanger"</h2>
+
+<p>Here again I rotated the part by 180° so the seam would be on the backside/underside.</p>
+
+<a href="hanger.png"><img class="screen-capture" src="hanger.png"/></a>
+
+<h3>Files</h3>
+
+<li><a href="hanger.3mf">hanger.3mf</a></li>
+<li><a href="hanger.gcode">hanger.gcode</a></li>
+
+<hr/>
+
+<h2>"Mid Hull"</h2>
+
+<p>Here again I rotated the part by 180° so the seam would be on the backside/underside. I also added a support
+    blocker on the inside as the support really isn't necessary. I suppose I could have adjusted the overhang tolerance
+    but I wanted to play with the blocker.</p>
+
+<a href="mid-haul-support-blocker.png"><img class="screen-capture-cura" src="mid-haul-support-blocker.png"/></a>
+<a href="mid-hulls.jpg"><img class="screen-capture" src="mid-hulls.jpg"/></a>
+
+<h3>Files</h3>
+
+<li><a href="mid-hull.3mf">mid-hull.3mf</a></li>
+<li><a href="mid-hull.gcode">mid-hull.gcode</a></li>
+
+<hr/>
+
+<h2>"Propulsion Engines"</h2>
+
+<p>Seam alignment to "Sharpest Corner" and no support. In the final layers at about 98%, the print head caught and
+    partially dislodged the engine from the bed. Thankfully it did not cause a total failure and I was able to stabilize
+    it with some safety tape applied as an angle bracket. So I regenerated with brim on the inside as well as the
+    outside.
+    Upon closer inspection, there was some unnecessary infill which looked to be the culprit so I removed that as well
+    by disabling infill.</p>
+
+<p>I am extremely happy with the quality of this print.</p>
+
+<a href="engine-left.jpg"><img class="screen-capture" src="engine-left.jpg"/></a>
+
+<h3>Files</h3>
+
+<li><a href="propulsion-engine-left.3mf">propulsion-engine-left.3mf</a>&nbsp;|&nbsp;<a
+        href="propulsion-engine-right.3mf">propulsion-engine-right.3mf</a></li>
+<li><a href="propulsion-engine-left.gcode">propulsion-engine-left.gcode</a>&nbsp;|&nbsp;<a
+        href="propulsion-engine-right.gcode">propulsion-engine-right.gcode</a></li>
+
+<hr/>
+
+<h2>"Engine Caps"</h2>
+
+<p>For the front cap, I blocked support in the middle as advised. <i>The caps look uniform so I just printed the left
+    ones twice.</i></p>
+<p>For the back caps, rotated the part by 180° so the seam would be on the backside/underside and enabled
+    "Outer Before Inner Walls" to see if that helps with the seaming.</p>
+
+<a href="engine-cap-block-middle-support.png"><img class="screen-capture-cura"
+                                                   src="engine-cap-block-middle-support.png"/></a>
+<a href="outter-before-inner-walls.png"><img class="screen-capture-cura"
+                                             src="outter-before-inner-walls.png"/></a>
+
+<a href="caps.jpg"><img class="screen-capture" src="caps.jpg"/></a>
+
+<h3>Files</h3>
+
+<li><a href="engine-front-cap-left.3mf">engine-front-cap-left.3mf</a>&nbsp;|&nbsp;<a href="engine-left-end-cap.3mf">engine-left-end-cap.3mf</a>
+</li>
+<li><a href="engine-left-end-cap.gcode">engine-front-cap-left.gcode</a>&nbsp;|&nbsp;<a href="engine-left-end-cap.gcode">engine-left-end-cap.gcode</a>
+</li>
+
+<hr/>
+
+<h2>"Arms"</h2>
+
+<p>Used "Outer Before Inner Walls" again and set the seam alignment to "Back" / "Sharpest Corner".
+    <i>The arms too look uniform so I just printed the left one twice.</i></p>
+
+
+<a href="arms.jpg"><img class="screen-capture" src="arms.jpg"/></a>
+
+<h3>Files</h3>
+
+<li><a href="left-arm.3mf">left-arm.3mf</a></li>
+<li><a href="left-arm.gcode">left-arm.gcode</a></li>
+
+<hr/>
+
+<h2>"Base"</h2>
+
+<p>I want with 20% infill.</p>
+
+<a href=""><img class="screen-capture" src=""/></a>
+
+<h3>Emblem Inlay</h3>
+
+<p>The emblem inlay was a little tricky. First it was orientated standing up so I flipped it 90° and dropped it to
+    the plate. However the initial slice looked like this:</p>
+
+<img class="screen-capture" src="emblem-raw.png"></html>
+
+<p>A little digging and I found that setting the "Horizontal Expansion" to 0.1 mm resolved the issue:</p>
+
+<img class="screen-capture" src="emblem-horizontal-expansion.png"></html>
+
+<a href=""><img class="screen-capture" src=""/></a>
+
+<h3>Files</h3>
+
+<li><a href="emblem-insert.gcode">emblem-insert.gcode</a></li>
+
+<hr/>
+
+<h2>Final Thoughts</h2>
+
+<p>
+<ul>
+    <li>This material combined with the high lighting level is both eye-popping and unforgiving because it reveals
+        every imperfection. Probably an excellent candidate for testing various settings...
+    </li>
+    <li>The silver filament looses a tiny bit of it's sheen when printed at lower level thicknesses. This is
+        due to the smoother finish produced by the thinner layer height. I prefer the way the way the light catches
+        and reflects on the standard quality (0.2mm).
+    </li>
+    <li>Bed leveling proved to be critical as always.</li>
+    <li>From the author, I came to know the hull was purposely left void so that lights could be introduced. I feel
+        link maybe I'll make another attempt, prints some of the parts(ore select pieces of them) like the engine domes
+        in a translucent material, cut out some of the windows, and add the lighting.
+    </li>
+</ul>
+</p>
+
+<br/>
+
+</body>
+</html>

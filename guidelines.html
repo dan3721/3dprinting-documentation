@@ -9,10 +9,12 @@
 <a name="top"/>
 <h4 style="text-align: right"><a href="index.html">Home</a></h4>
 
-<h1>General Guidelines</h1>
+<h1>General Guidelines and Check Lists</h1>
 
 <h2>Do</h2>
 <ol>
+    <li>Do regularly (after a few hours/before any larger job) level the bed. Be sure to perform the leveling <u>with
+        the bed at temperature.</u></li>
     <li>Do print with the lowest bed/end temperatures which still produce quality results and good adhesion in order to
         reduce the amount expansion and contraction of the material which can lead to a host of other issues.
     </li>
@@ -47,6 +49,22 @@
                 href="https://www.myminifactory.com/object/3d-print-star-trek-uss-enterprise-ncc-1701-88991">Star Trek
             USS Enterprise NCC 1701</a> is a good candidate.
     </li>
+    <li>Do reheat the bed if it's the first print of the day so it has time to thermally stabilize.</li>
+    <li>Do use "Random" seam alignment when printing bearings (a seam creates a speed bump).</li>
+    <li>Do allow the bed to cool before ~20° before attempting to dismount the piece. My bed temperature is pretty
+        dialed in. At 55° C pieces stick very well and as it cools to 30° they are automagically released!
+    </li>
+    <li>Do use a metallic or high sheen filament when testing and trouble shooting print issues and examine
+        results under high light so that all imperfections are amplified.
+    </li>
+    <li>Do use Silica beads to keep your filaments dry. I got <a
+            href="https://www.amazon.com/gp/product/B07QRRHJV3/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1">these</a>
+        which also came with handy drawstring bags.
+    </li>
+    <li>Do wipe the nozzle so that any filament buildup does not negatively impact or even fail future prints. I
+        usually try to do this as soon as a print finishes.
+    </li>
+    <li>Do handle filament with care. Ensure you hands are dry and clean.</li>
 </ol>
 
 <h2>Don't</h2>
@@ -58,7 +76,87 @@
     <li><b><u>Do not</u></b> print over USB. The data transfer is not fast enough which results in poor prints.
         See <a href="troubleshooting/troubleshooting.html#5">Slow Data Transfer (USB)</a>. Print from SD card.
     </li>
+    <li><b><u>Do not</u></b> handle filament with your hear hands any more than necessary.</li>
 </ol>
+
+<hr/>
+
+<h1>Slicing Checklist</h1>
+<ol>
+    <li>Ensure the model is optimally oriented. If it is not uniform in its x/y dimensions, rotate it so that the
+        smaller dimension is aligned with the x axis.
+    </li>
+    <li>Select the optimal seam alignment.</li>
+    <li>Inspect overhangs and determine if and where supports are needed.</li>
+    <li>Set the percentage and pattern if infill is needed.</li>
+    <li>From the top view transition up through the z-layers with a close eye on the outer walls. Ensure they are not
+        being build chaotically. For Cura, it may be necessary to enable "Print Thin Walls".
+    </li>
+    <li>Is the model a vase? If yes, then enable vase mode. In Cura that means enabling "Spiralize Outer Contour" and
+        "Smooth Spirialized Contours" under "Special Modes".
+    </li>
+</ol>
+
+<h1>Printing Checklist</h1>
+<ol>
+    <li>Ensure the bed is level. Ensure the bed is level. Ensure the bed is level.</li>
+    <li>Double check the target print temperature.</li>
+    <li>Preheat the bed if it's the first print of the day.</li>
+</ol>
+
+<hr/>
+
+<h1>Changing Filament</h1>
+<ol>
+        <li>Preheat to 200-220° if not already hot.</li>
+    <li>Depress the filament release and feed/push some through manually to induce some extrusion. Then pull the
+        filament out quick and smoothly. A good pull will result in the filament end looking like
+        <a href="good-pull.jpg">this</a></li>.
+</ol>
+
+<h1>The First Layer is <span style="color: red">Critical</span>!</h1>
+<p>
+    A building is only as strong as its foundation... I like to employ brims because for may reasons including
+    increased build adhesion, reduced warping, nozzle priming and thermal/flow stabilization, afford tabs for
+    application of <a href="troubleshooting/troubleshooting.html#6">"Safety Tape"</a>, etc. In addition, they are
+    great indicators of the levelness of the bed and adhesion quality.
+</p>
+<p>
+    Here we can see good brim lines but poor adhesion. In this case the bed temperature was too low. Raising it just
+    5° resolved the issue.
+</p>
+<a href="good-brim-poor-adhesion.jpg"><img width="200" src="good-brim-poor-adhesion.jpg"/></a>
+<p>
+    Watch to ensure brim lines are laying and bonding well. There should be no gaps or thinning between the
+    concentric rings. Additionally they should be smooth and uniform.
+</p>
+<a href="brim-good-bad.jpg"><img width="200" src="brim-good-bad.jpg"/></a>
+
+<hr/>
+
+<h1>Ancillaries</h1>
+
+<h2>Silica Beads</h2>
+<p>I put these in with my filaments to keep them dry.</p>
+<p><a href="https://www.amazon.com/gp/product/B07QRRHJV3/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1">wisedry [ 5
+    LBS ] Silica Gel Beads Reusable Color Indicating Rechargeable Desiccant Bulk with 10 Pcs Organza Drawstring Bags</a>
+</p>
+<a href="silica-beads.jpg"><img class="screen-capture" src="silica-beads.jpg"/></a>
+
+<h2>Humidity Sensors</h2>
+<p>I put these in with my filaments so I can keep an eye on the humidity.</p>
+<p><a href="https://www.amazon.com/gp/product/B07NSYQQGC/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1">TAIWEI 6 Pack
+    Mini Small Digital Electronic Temperature Humidity Meters Gauge Indoor Thermometer Hygrometer LCD Display Fahrenheit
+    (℉) for Humidors, Greenhouse, Garden, Cellar</a>
+</p>
+<a href=""><img class="screen-capture" src=""/></a>
+
+<h2>Filament Box with Roller</h2>
+<p>This thing is absolutely awesome and the right price too.</p>
+<p><a href="https://www.amazon.com/gp/product/B07HHJCF7B/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1">3D Printer
+    Filament Box Deluxe - Dispenser and Storage Container</a>
+</p>
+<a href="filament-box.jpg"><img class="screen-capture" src="filament-box.jpg"/></a>
 
 
 </body>

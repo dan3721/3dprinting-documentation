@@ -23,3 +23,11 @@ a:hover {
 a:active {
     color: magenta;
 }
+
+.screen-capture {
+    width: 800px;
+}
+
+.screen-capture-cura {
+    width: 800px;
+}
