@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3f6dc47-dbec-4350-bf34-099af623896f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/good-pull.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/materials/hatchbox-black.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/ncc-1701/engine-left-end-cap.3mf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/ncc-1701/engine-left-end-cap.gcode" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/ncc-1701/left-arm.3mf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/ncc-1701/left-arm.gcode" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/dan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/dan.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3d.css" beforeDir="false" afterPath="$PROJECT_DIR$/3d.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guidelines.html" beforeDir="false" afterPath="$PROJECT_DIR$/guidelines.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/materials/hatchbox-blue.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/materials/hatchbox-blue.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/materials/materials.html" beforeDir="false" afterPath="$PROJECT_DIR$/materials/materials.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-setup.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/my-setup.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/troubleshooting/troubleshooting.html" beforeDir="false" afterPath="$PROJECT_DIR$/troubleshooting/troubleshooting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/katamco-ailament-adapter/katamco-filament-adapter.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/katamco-ailament-adapter/katamco-filament-adapter.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +116,7 @@
       <workItem from="1577801525432" duration="729000" />
       <workItem from="1577802449520" duration="65000" />
       <workItem from="1577802526489" duration="108000" />
-      <workItem from="1577803221600" duration="11505000" />
+      <workItem from="1577803221600" duration="12009000" />
     </task>
     <servers />
   </component>
