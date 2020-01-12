@@ -1,6 +1,9 @@
 /*
 * Heart Decoration (v1).
 *
+* Infill    20%
+* Support   yes (10%)
+*
 * 1/10/2020
 * dan.bush@techentourage.com
 */
@@ -59,10 +62,10 @@ module decoration(height) {
   }
   backer(height+7);
 }
-decoration(20);
+//decoration(20);
 
-  
-
+// orientate for printing
+translate([0,0,133.7]) rotate([-90,0,180]) decoration(20);
 
 
 
