@@ -4,8 +4,7 @@
 * 1/5/2020
 * dan.bush@techentourage.com
 */
-
-$fn=60;
+//$fn=30;
 
 module bullet(width, height) {
   // body

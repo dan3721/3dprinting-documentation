@@ -4,7 +4,7 @@
 * 1/5/2020
 * dan.bush@techentourage.com
 */
-$fn=60;
+//$fn=30;
 
 module ring(offset_from_center, radius) {
   rotate_extrude(angle = 360, convexity = 10) {
